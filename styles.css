@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #87CEFA, #4682B4) !important; /* Light blue gradient */
+    color: #333;
+}
+
+
+/* Header Background Image */
+.header-bg {
+    background: url('header-bg.png') no-repeat center center/cover;
+    height: 250px; /* Adjusted to include name & title */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Dark Overlay for Readability */
+.header-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darker overlay */
+    z-index: 1;
+}
+
+/* Profile Content - Positioned in the Header */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Profile Image */
+.profile-photo {
+    width: 40mm;  /* Restored to 4 cm */
+    height: 50mm; /* Restored to 5 cm */
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Profile Text */
+.profile-info h1 {
+    font-size: 26px;
+    color: #FFD700; /* Gold for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Dark shadow */
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    color: #FFD700; /* Gold color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Matching gold color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Section Styling */
+.section {
+    background: white;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 60px;
+}
+
+h2 {
+    color: #4a47a3;
+}
+
+/* Footer */
+footer {
+    background: #4a47a3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Publications List Styling */
+#publications ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+#publications li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+/* Reduce width for Home and Contact sections & center them */
+#home, #contact {
+    width: 70%; /* Decreased width (default was 80%) */
+    margin: 30px auto; /* Centers the section */
+}
+
+
